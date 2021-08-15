@@ -82,7 +82,8 @@ namespace MultiCopy
         /// <param name="e">Event arguments.</param>
         private void OnSourceCodeGithubcomToolStripMenuItemClick(object sender, EventArgs e)
         {
-            // TODO Add code
+            // Open GitHub repository
+            Process.Start("https://github.com/publicdomain/multicopy");
         }
 
         /// <summary>
@@ -142,7 +143,7 @@ namespace MultiCopy
         /// <param name="e">E.</param>
         private void OnProcesssButtonClick(object sender, EventArgs e)
         {
-            // TODO Add code	
+            // TODO Add code
         }
 
         /// <summary>
