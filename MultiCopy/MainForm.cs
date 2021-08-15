@@ -26,21 +26,11 @@ namespace MultiCopy
         }
 
         /// <summary>
-        /// Handles the new tool strip menu item click.
+        /// Handles the new tool strip menu item click event.
         /// </summary>
         /// <param name="sender">Sender object.</param>
         /// <param name="e">Event arguments.</param>
         private void OnNewToolStripMenuItemClick(object sender, EventArgs e)
-        {
-            // TODO Add code
-        }
-
-        /// <summary>
-        /// Handles the exit tool strip menu item click.
-        /// </summary>
-        /// <param name="sender">Sender object.</param>
-        /// <param name="e">Event arguments.</param>
-        private void OnExitToolStripMenuItemClick(object sender, EventArgs e)
         {
             // TODO Add code
         }
@@ -55,13 +45,18 @@ namespace MultiCopy
             // TODO Add code
         }
 
+        /// <summary>
+        /// Ons the weekly releases public domain weeklycom tool strip menu item click event.
+        /// </summary>
+        /// <param name="sender">Sender.</param>
+        /// <param name="e">E.</param>
         private void OnWeeklyReleasesPublicDomainWeeklycomToolStripMenuItemClick(object sender, EventArgs e)
         {
             // TODO Add code
         }
 
         /// <summary>
-        /// Handles the original thread donation codercom tool strip menu item click.
+        /// Handles the original thread donation codercom tool strip menu item click event.
         /// </summary>
         /// <param name="sender">Sender object.</param>
         /// <param name="e">Event arguments.</param>
@@ -71,7 +66,7 @@ namespace MultiCopy
         }
 
         /// <summary>
-        /// Handles the source code githubcom tool strip menu item click.
+        /// Handles the source code githubcom tool strip menu item click event.
         /// </summary>
         /// <param name="sender">Sender object.</param>
         /// <param name="e">Event arguments.</param>
@@ -81,7 +76,7 @@ namespace MultiCopy
         }
 
         /// <summary>
-        /// Handles the about tool strip menu item click.
+        /// Handles the about tool strip menu item click event.
         /// </summary>
         /// <param name="sender">Sender object.</param>
         /// <param name="e">Event arguments.</param>
@@ -91,7 +86,7 @@ namespace MultiCopy
         }
 
         /// <summary>
-        /// Handles the add file button click.
+        /// Handles the add file button click event.
         /// </summary>
         /// <param name="sender">Sender object.</param>
         /// <param name="e">Event arguments.</param>
@@ -101,7 +96,7 @@ namespace MultiCopy
         }
 
         /// <summary>
-        /// Handles the add directory button click.
+        /// Handles the add directory button click event.
         /// </summary>
         /// <param name="sender">Sender object.</param>
         /// <param name="e">Event arguments.</param>
@@ -111,7 +106,7 @@ namespace MultiCopy
         }
 
         /// <summary>
-        /// Handles the add target directory button click.
+        /// Handles the add target directory button click event.
         /// </summary>
         /// <param name="sender">Sender object.</param>
         /// <param name="e">Event arguments.</param>
@@ -121,7 +116,7 @@ namespace MultiCopy
         }
 
         /// <summary>
-        /// Handles the copy radio button checked changed.
+        /// Handles the copy radio button checked changed event.
         /// </summary>
         /// <param name="sender">Sender object.</param>
         /// <param name="e">Event arguments.</param>
@@ -131,7 +126,7 @@ namespace MultiCopy
         }
 
         /// <summary>
-        /// Handles the move radio button checked changed.
+        /// Handles the move radio button checked changed event.
         /// </summary>
         /// <param name="sender">Sender object.</param>
         /// <param name="e">Event arguments.</param>
@@ -141,23 +136,25 @@ namespace MultiCopy
         }
 
         /// <summary>
-        /// Processses the button click.
+        /// Handles the processs button click event.
         /// </summary>
-        /// <param name="sender">Sender object.</param>
-        /// <param name="e">Event arguments.</param>
-        private void ProcesssButtonClick(object sender, EventArgs e)
+        /// <param name="sender">Sender.</param>
+        /// <param name="e">E.</param>
+        private void OnProcesssButtonClick(object sender, EventArgs e)
         {
             // TODO Add code	
         }
 
+
         /// <summary>
-        /// Moves the check box checked changed.
+        /// Handles the exit tool strip menu item click event.
         /// </summary>
         /// <param name="sender">Sender object.</param>
         /// <param name="e">Event arguments.</param>
-        private void MoveCheckBoxCheckedChanged(object sender, EventArgs e)
+        private void OnExitToolStripMenuItemClick(object sender, EventArgs e)
         {
-            // TODO Add code
+            // Close program
+            this.Close();
         }
     }
 }
