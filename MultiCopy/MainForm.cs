@@ -42,7 +42,14 @@ namespace MultiCopy
         /// <param name="e">Event arguments.</param>
         private void OnOptionsToolStripMenuItemDropDownItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
-            // TODO Add code
+            // Set tool strip menu item
+            ToolStripMenuItem toolStripMenuItem = (ToolStripMenuItem)e.ClickedItem;
+
+            // Toggle checked
+            toolStripMenuItem.Checked = !toolStripMenuItem.Checked;
+
+            // Set topmost by check box
+            this.TopMost = this.alwaysOnTopToolStripMenuItem.Checked;
         }
 
         /// <summary>
@@ -116,16 +123,6 @@ namespace MultiCopy
         }
 
         /// <summary>
-        /// Handles the copy radio button checked changed event.
-        /// </summary>
-        /// <param name="sender">Sender object.</param>
-        /// <param name="e">Event arguments.</param>
-        private void OnCopyRadioButtonCheckedChanged(object sender, EventArgs e)
-        {
-            // TODO Add code
-        }
-
-        /// <summary>
         /// Handles the move radio button checked changed event.
         /// </summary>
         /// <param name="sender">Sender object.</param>
@@ -144,7 +141,6 @@ namespace MultiCopy
         {
             // TODO Add code	
         }
-
 
         /// <summary>
         /// Handles the exit tool strip menu item click event.
