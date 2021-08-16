@@ -111,6 +111,9 @@ namespace MultiCopy
             {
                 // Add to source list
                 this.sourceListBox.Items.AddRange(this.openFileDialog.FileNames);
+
+                // Update count
+                this.sourcesCountToolStripStatusLabel.Text = this.sourceListBox.Items.Count.ToString();
             }
         }
 
@@ -121,7 +124,18 @@ namespace MultiCopy
         /// <param name="e">Event arguments.</param>
         private void OnAddDirectoryButtonClick(object sender, EventArgs e)
         {
-            // TODO Add code
+            // Reset selected path
+            this.folderBrowserDialog.SelectedPath = string.Empty;
+
+            // Show folder browser dialog
+            if (this.folderBrowserDialog.ShowDialog() == DialogResult.OK && this.folderBrowserDialog.SelectedPath.Length > 0)
+            {
+                // Add selected path
+                this.sourceListBox.Items.Add(this.folderBrowserDialog.SelectedPath);
+
+                // Update count
+                this.sourcesCountToolStripStatusLabel.Text = this.sourceListBox.Items.Count.ToString();
+            }
         }
 
         /// <summary>
