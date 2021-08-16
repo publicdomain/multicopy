@@ -182,7 +182,8 @@ namespace MultiCopy
         /// <param name="e">Event arguments.</param>
         private void OnMoveCheckBoxCheckedChanged(object sender, EventArgs e)
         {
-            // TODO Add code
+            // Make mold selectively
+            this.moveCheckBox.ForeColor = this.moveCheckBox.Checked ? Color.Red : Color.Black;
         }
 
         /// <summary>
