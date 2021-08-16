@@ -33,7 +33,13 @@ namespace MultiCopy
         /// <param name="e">Event arguments.</param>
         private void OnNewToolStripMenuItemClick(object sender, EventArgs e)
         {
-            // TODO Add code
+            // Clear lists
+            this.sourceListBox.Items.Clear();
+            this.targetListBox.Items.Clear();
+
+            // Reset counters
+            this.sourcesCountToolStripStatusLabel.Text = "0";
+            this.targetsCountToolStripStatusLabel.Text = "0";
         }
 
         /// <summary>
@@ -170,6 +176,16 @@ namespace MultiCopy
         }
 
         /// <summary>
+        /// Handles the move check box checked changed event.
+        /// </summary>
+        /// <param name="sender">Sender object.</param>
+        /// <param name="e">Event arguments.</param>
+        private void OnMoveCheckBoxCheckedChanged(object sender, EventArgs e)
+        {
+            // TODO Add code
+        }
+
+        /// <summary>
         /// Handles the exit tool strip menu item click event.
         /// </summary>
         /// <param name="sender">Sender object.</param>
@@ -178,16 +194,6 @@ namespace MultiCopy
         {
             // Close program
             this.Close();
-        }
-
-        /// <summary>
-        /// Handles the move check box checked changed event.
-        /// </summary>
-        /// <param name="sender">Sender object.</param>
-        /// <param name="e">Event arguments.</param>
-        private void OnMoveCheckBoxCheckedChanged(object sender, EventArgs e)
-        {
-            // TODO Add code
         }
     }
 }
