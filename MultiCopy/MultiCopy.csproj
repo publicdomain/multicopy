@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="Resources\archive_154686_640_aSO_icon.ico" />
     <None Include="Resources\publicdomain.com_7-8-vista-xp.ico" />
   </ItemGroup>
   <ItemGroup>

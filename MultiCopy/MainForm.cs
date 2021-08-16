@@ -103,7 +103,15 @@ namespace MultiCopy
         /// <param name="e">Event arguments.</param>
         private void OnAddFileButtonClick(object sender, EventArgs e)
         {
-            // TODO Add code
+            // Reset file name
+            this.openFileDialog.FileName = string.Empty;
+
+            // Show open file dialog
+            if (this.openFileDialog.ShowDialog() == DialogResult.OK && this.openFileDialog.FileNames.Length > 0)
+            {
+                // Add to source list
+                this.sourceListBox.Items.AddRange(this.openFileDialog.FileNames);
+            }
         }
 
         /// <summary>
@@ -127,16 +135,6 @@ namespace MultiCopy
         }
 
         /// <summary>
-        /// Handles the move radio button checked changed event.
-        /// </summary>
-        /// <param name="sender">Sender object.</param>
-        /// <param name="e">Event arguments.</param>
-        private void OnMoveRadioButtonCheckedChanged(object sender, EventArgs e)
-        {
-            // TODO Add code
-        }
-
-        /// <summary>
         /// Handles the processs button click event.
         /// </summary>
         /// <param name="sender">Sender.</param>
@@ -155,6 +153,16 @@ namespace MultiCopy
         {
             // Close program
             this.Close();
+        }
+
+        /// <summary>
+        /// Handles the move check box checked changed event.
+        /// </summary>
+        /// <param name="sender">Sender object.</param>
+        /// <param name="e">Event arguments.</param>
+        private void OnMoveCheckBoxCheckedChanged(object sender, EventArgs e)
+        {
+            // TODO Add code
         }
     }
 }
