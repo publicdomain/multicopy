@@ -145,7 +145,18 @@ namespace MultiCopy
         /// <param name="e">Event arguments.</param>
         private void OnAddTargetDirectoryButtonClick(object sender, EventArgs e)
         {
-            // TODO Add code
+            // Reset selected path
+            this.folderBrowserDialog.SelectedPath = string.Empty;
+
+            // Show folder browser dialog
+            if (this.folderBrowserDialog.ShowDialog() == DialogResult.OK && this.folderBrowserDialog.SelectedPath.Length > 0)
+            {
+                // Add selected path
+                this.targetListBox.Items.Add(this.folderBrowserDialog.SelectedPath);
+
+                // Update count
+                this.targetsCountToolStripStatusLabel.Text = this.targetListBox.Items.Count.ToString();
+            }
         }
 
         /// <summary>
