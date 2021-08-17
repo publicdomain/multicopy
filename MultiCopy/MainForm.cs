@@ -193,7 +193,7 @@ namespace MultiCopy
         /// <param name="e">Event arguments.</param>
         private void OnExitToolStripMenuItemClick(object sender, EventArgs e)
         {
-            // Close program
+            // Close program        
             this.Close();
         }
     }
