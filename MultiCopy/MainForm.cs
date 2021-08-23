@@ -150,7 +150,7 @@ namespace MultiCopy
             var aboutForm = new AboutForm(
                 $"About {programTitle}",
                 $"{programTitle} {version.Major}.{version.Minor}.{version.Build}",
-                $"Made for: amaid{Environment.NewLine}DonationCoder.com{Environment.NewLine}Day #233, Week #33 @ August 21, 2021",
+                $"Made for: amaid{Environment.NewLine}DonationCoder.com{Environment.NewLine}Day #234, Week #33 @ August 22, 2021",
                 licenseText,
                 this.Icon.ToBitmap())
             {
